@@ -7,10 +7,9 @@ This project is a simple RESTful API for managing tasks. It allows you to create
 
 - `app.py`: The main entry point of the application. It sets up the Flask app and defines the API endpoints.
 - `models.py`: Contains the `Task` class representing a task and the `TaskEncoder` class for JSON serialization of tasks.
-- `database.py`: Handles the connection to the SQLite database and provides helper functions for executing SQL queries.
+- `services.py`: Handles the connection to the SQLite database and provides helper functions for executing SQL queries.
 - `controllers.py`: Defines the functions that handle the API endpoints and interact with the database.
-- `config.py`: Contains configuration variables for the application.
-- `requirements.txt`: Lists the Python dependencies required for the project.
+- `Requirements.txt`: Lists the Python dependencies required for the project.
 
 **API Endpoints:**
 
@@ -30,7 +29,7 @@ This project is a simple RESTful API for managing tasks. It allows you to create
   - Defines the `Task` class representing a task.
   - Implements the `TaskEncoder` class for JSON serialization of tasks.
 
-- `database.py`:
+- `services.py`:
   - Establishes a connection to the SQLite database.
   - Provides helper functions for executing SQL queries.
 
@@ -64,7 +63,7 @@ The API will be accessible at `http://localhost:5000`.
 
 **Pagination:**
 
-The `/tasks` endpoint supports pagination. You can specify the `page` and `per_page` query parameters to retrieve a specific page of tasks. By default, `page` is set to 1 and `per_page` is set to 10.
+The `/tasks` endpoint supports pagination. You can specify the `page` and `per_page` query parameters to retrieve a specific page of tasks. By default, `page` is set to 0 and `per_page` is set to 10.
 
 **Error Handling:**
 
@@ -74,5 +73,5 @@ The API handles common errors and provides appropriate error responses. For exam
 
 This Task Management RESTful API provides basic CRUD operations for managing tasks. It can be used as a starting point for building more advanced task management systems or integrated into existing applications.
 
-Please refer to the API documentation or the source code for further details on the available endpoints and
+
 

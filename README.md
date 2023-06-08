@@ -1,4 +1,4 @@
-# Grey_dot_backend
+# Gray_dot_backend
 **Task Management RESTful API**
 
 This project is a simple RESTful API for managing tasks. It allows you to create, retrieve, update, and delete tasks. The tasks are stored in a SQLite database, and the API is implemented using Python and Flask.
